@@ -1,0 +1,52 @@
+<div class="container my-5 py-4">
+  
+  <div class="row mb-5">
+    <div class="col-12 border-bottom border-secondary pb-3">
+      <h1 class="display-4 fw-bold text-light neon-text">Behind The Scenes</h1>
+      <p class="text-secondary fs-5">Development logs, tech specs, and frequently asked questions.</p>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-lg-5">
+      <div class="card bg-dark text-light border-0 shadow-lg p-4 h-100 tech-card">
+        <h3 class="fw-bold accent-text mb-4">Technical Specs</h3>
+        <p class="text-secondary mb-4">The pipeline used to bring these robotic companions to life, carefully crafted to avoid total system failure.</p>
+        
+        <ul class="list-group list-group-flush bg-transparent">
+          <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center">
+            <span><strong>Modeling & UV:</strong></span>
+            <span class="text-info">Autodesk 3ds Max</span>
+          </li>
+          <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center">
+            <span><strong>Rendering Engine:</strong></span>
+            <span class="text-warning">Corona Renderer</span>
+          </li>
+          <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center">
+            <span><strong>Texturing & Decals:</strong></span>
+            <span class="text-primary">Adobe Photoshop 2023</span>
+          </li>
+          <li class="list-group-item bg-transparent text-light border-secondary d-flex justify-content-between align-items-center">
+            <span><strong>Poly Count:</strong></span>
+            <span class="text-danger">Too Many</span>
+          </li>
+        </ul>
+
+        <div class="mt-5 text-center">
+          <p class="fst-italic text-secondary small">"No actual Kerfurs were harmed during the rendering process. My PC, however, is screaming."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-7">
+      <h3 class="fw-bold text-light mb-4">Transmission Logs (FAQ)</h3>
+      
+      <div class="faq-container">
+        <div class="faq-item mb-4 p-3 border-start border-4 border-fuchsia" *ngFor="let item of faqs">
+          <h5 class="fw-bold text-light"><span class="accent-text">Q:</span> {{ item.question }}</h5>
+          <p class="text-secondary mb-0"><span class="text-light">A:</span> {{ item.answer }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

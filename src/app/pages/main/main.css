@@ -1,0 +1,31 @@
+
+.carousel-img {
+  height: 65vh; 
+  object-fit: cover;
+  filter: brightness(0.5); 
+}
+.carousel-caption h1, .carousel-caption p {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+.cool-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cool-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 15px 30px rgba(220, 53, 69, 0.15); 
+  border-color: #dc35a2; 
+}
+
+.accent-text , .btn-outline-danger{
+  color: #d435dc !important;
+  border-color: #aa0088 !important;
+}
+.btn-outline-danger:hover {
+  background-color: #d435dc;
+  color: #fff !important;
+  border-color: #d435dc;
+}

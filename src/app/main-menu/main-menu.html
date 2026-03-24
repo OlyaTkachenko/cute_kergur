@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand d-flex align-items-center  font-monospace" href="#">
+      <img src="/logo.png" width="40" height="40" alt="Логотип Керфера">
+      <span class="ms-2 neon-red">KERFUR_OS</span>
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 font-monospace">
+        <li class="nav-item" *ngFor="let link of links">
+          <a class="nav-link neon-pink" [routerLink]="link.path" [routerLinkActive]="link.active" >
+            [{{ link.label | uppercase }}]
+          </a>
+        </li>
+        
+      </ul>
+
+      <span class="navbar-text green-online font-monospace">
+        [ONLINE]
+      </span>
+    </div>
+  </div>
+</nav>

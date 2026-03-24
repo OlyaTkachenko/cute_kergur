@@ -1,0 +1,23 @@
+<div class="container my-5 py-4">
+  <div class="row mb-5 text-center">
+    <div class="col-12">
+      <h1 class="display-4 fw-bold text-light" style="text-shadow: 2px 2px 10px rgba(224, 36, 195, 0.5);">The Model Lineup</h1>
+      <p class="text-secondary fs-5 mt-3">
+        Here they are — the pride of the base, our best (and only) helpers.<br>
+        From the classic cleaner to the combat-ready Omega. Choose your fighter!
+      </p>
+    </div>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let bot of kerfurs">
+        <div class="card h-100 cool-card bg-dark text-light">
+            <img [src]="bot.image" class="card-img-top" alt="{{bot.name}}">
+            <div class="card-body">
+                <h4 class="card-title fw-bold accent-text">{{bot.name}}</h4>
+                <h6 class="card-subtitle mb-3 text-secondary">{{bot.role}}</h6>
+                <p class="card-text">{{bot.desc}}</p>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>

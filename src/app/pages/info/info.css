@@ -1,0 +1,29 @@
+.accent-text {
+  color: #e024c3;
+}
+.border-fuchsia {
+  border-color: #e024c3 !important;
+}
+
+.neon-text {
+  text-shadow: 0 0 15px rgba(224, 36, 195, 0.4);
+}
+
+
+.tech-card {
+  border: 1px solid #333 !important;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #1a1a1a, #121212);
+}
+
+
+.faq-item {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 0 8px 8px 0;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: rgba(224, 36, 195, 0.05);
+  transform: translateX(5px); 
+}

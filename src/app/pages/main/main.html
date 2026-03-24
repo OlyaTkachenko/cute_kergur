@@ -1,0 +1,75 @@
+<div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  
+  <div class="carousel-inner shadow-lg">
+    <div class="carousel-item active" data-bs-interval="4000">
+      <img src="/3F1.webp" class="d-block w-100 carousel-img" alt="Головний рендер">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="display-4 fw-bold">The Ultimate Base Companion</h1>
+        <p class="fs-4">50% Roomba, 50% Cat, 100% better at fixing satellites than you are.</p>
+      </div>
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="/cute.webp" class="d-block w-100 carousel-img" alt="Деталі моделі">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="display-4 fw-bold">Maximum Efficiency</h1>
+        <p class="fs-4">They fetch hash codes, repair servers, and occasionally get violently stuck on a single flat pixel.</p>
+      </div>
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="/duo.jpg" class="d-block w-100 carousel-img" alt="Процес">
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="display-4 fw-bold">Protect At All Costs</h1>
+        <p class="fs-4">If the aliens take the base, that's fine. If they touch the Kerfur, it's war.</p>
+      </div>
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden"></span>
+  </button>
+</div>
+
+
+
+<div class="container my-5 py-4">
+  <div class="row mb-5 text-center">
+    <div class="col-12">
+      <h2 class="display-5 fw-bold text-light">What`s inside?</h2>
+      <p class="text-secondary">Choose a section to view</p>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card h-100 cool-card p-4">
+        <div class="card-body text-center">
+          <h3 class="card-title fw-bold accent-text mb-3">Models</h3>
+          <p class="card-text text-light">Behold the polygons! Only the finest, non-exploding Kerfur models that definitely won't steal your hash codes.</p>
+          <button routerLink="/models" class="btn btn-outline-danger mt-3 px-4">Show Me The Cats</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="card h-100 cool-card p-4">
+        <div class="card-body text-center">
+          <h3 class="card-title fw-bold accent-text mb-3">Information</h3>
+          <p class="card-text text-light">Technical mumbo-jumbo, used software, and the tragic history of how these robots were born from pure chaos.</p>
+          <button routerLink = "/info" class="btn btn-outline-danger mt-3 px-4">Read The Logs</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

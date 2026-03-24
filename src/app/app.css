@@ -1,0 +1,7 @@
+.button-active{
+    color: #ffffff ;
+    text-shadow: 
+        0 0 5px #ffffff,
+        0 0 15px #ff66cc,
+        0 0 30px #ff00ff;
+}

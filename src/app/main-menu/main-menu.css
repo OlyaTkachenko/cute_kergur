@@ -1,0 +1,39 @@
+.neon-pink{
+    color: #ef6ac3;
+    text-shadow: 
+        0 0 3px #ff66cc,   
+        0 0 5px #ff66cc,  
+        0 0 3px #ff00ff;
+}
+.neon-pink:hover {
+    color: #ffffff !important;
+    text-shadow: 
+        0 0 5px #ffffff,
+        0 0 15px #ff66cc,
+        0 0 30px #ff00ff;
+}
+.neon-red{
+    color: #e8277b;
+    font-weight: bold;
+    text-shadow: 
+        0 0 5px #f90faf,
+        0 0 15px #ff66cc,
+        0 0 30px #ff00ff;
+}
+.green-online{
+    color:rgb(16, 228, 16);
+    text-shadow: 
+        0 0 5px #ffffff,
+        0 0 15px #8aff66,
+        0 0 30px #00ff22;
+}
+nav{
+    background-color: rgb(28, 26, 26);
+}
+.button-active{
+    color: #ffffff ;
+    text-shadow: 
+        0 0 5px #ffffff,
+        0 0 15px #ff66cc,
+        0 0 30px #ff00ff;
+}
