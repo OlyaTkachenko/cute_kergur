@@ -1,0 +1,58 @@
+.kerfur-form-card {
+    background-color: #121212;
+    border: 1px solid #333;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.kerfur-label {
+    color: #e024c3;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.kerfur-input {
+    background-color: #1a1a1a !important; 
+    border: 1px solid #444;
+    color: #00ff00 !important; 
+    font-family: monospace;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.kerfur-input:focus {
+    border-color: #e024c3;
+    box-shadow: 0 0 15px rgba(224, 36, 195, 0.4);
+    background-color: #0f0f0f !important;
+}
+
+.kerfur-btn {
+    background-color: transparent;
+    border: 2px solid #e024c3;
+    color: #e024c3;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.kerfur-btn-test {
+    background-color: transparent;
+    border: 1px solid #0b81ad;
+    color: #0b81ad;
+    font-family: monospace;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.kerfur-btn-test:hover {
+    background-color: #24a1e0;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(36, 127, 224, 0.6);
+}
+
+.kerfur-btn:hover {
+    background-color: #e024c3;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(224, 36, 195, 0.6);
+}

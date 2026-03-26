@@ -1,0 +1,70 @@
+
+<div class="container my-5 py-4">
+    <div class="row text-center">
+        <div class="col-12">
+            <h1 class="text-light" style="text-shadow: 2px 2px 10px rgba(224, 36, 195, 0.5);">System Registration</h1>
+            <h4 class="text-secondary fw-light">Create a new user profile for database access:</h4>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <form class="kerfur-form-card p-4 rounded-3 mb-5" [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+                
+                <div class="mb-3">
+                    <label for="name" class="form-label kerfur-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control kerfur-input" formControlName="name"> 
+
+                    <div *ngIf="signUpForm.controls.name.invalid && (signUpForm.controls.name.dirty || signUpForm.controls.name.touched)" class="text-danger mt-1">
+                        <div *ngIf="signUpForm.controls.name.errors?.['required']">Name is required</div>
+                        <div *ngIf="signUpForm.controls.name.errors?.['minlength']">Name must be at least 3 characters long</div>
+                    </div>
+                </div> <div class="mb-3">
+                    <label for="login" class="form-label kerfur-label">Login:</label>
+                    <input type="text" id="login" name="login" class="form-control kerfur-input" formControlName="login">
+                    
+                    <div *ngIf="signUpForm.controls.login.invalid && (signUpForm.controls.login.dirty || signUpForm.controls.login.touched)" class="text-danger mt-1">
+                        <div *ngIf="signUpForm.controls.login.errors?.['required']">Login is required</div>
+                        <div *ngIf="signUpForm.controls.login.errors?.['minlength']">Login must be at least 3 characters long</div>
+                    </div>
+                </div> <div class="mb-3">
+                    <label for="password" class="form-label kerfur-label">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control kerfur-input" formControlName="password">
+                    
+                    <div *ngIf="signUpForm.controls.password.invalid && (signUpForm.controls.password.dirty || signUpForm.controls.password.touched)" class="text-danger mt-1">
+                        <div *ngIf="signUpForm.controls.password.errors?.['required']">Password is required</div>
+                        <div *ngIf="signUpForm.controls.password.errors?.['minlength']">Password must be at least 6 characters long</div>
+                    </div>
+                </div> <div class="mb-3">
+                    <label for="birthday" class="form-label kerfur-label">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday" class="form-control kerfur-input" formControlName="birthday">
+                    
+                    <div *ngIf="signUpForm.controls.birthday.invalid && (signUpForm.controls.birthday.dirty || signUpForm.controls.birthday.touched)" class="text-danger mt-1">
+                        <div *ngIf="signUpForm.controls.birthday.errors?.['required']">Birthday is required</div>
+                    </div>
+                </div> <div class="mb-3">
+                    <label for="email" class="form-label kerfur-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control kerfur-input" formControlName="email">
+                    
+                    <div *ngIf="signUpForm.controls.email.invalid && (signUpForm.controls.email.dirty || signUpForm.controls.email.touched)" class="text-danger mt-1">
+                        <div *ngIf="signUpForm.controls.email.errors?.['required']">Email is required</div>
+                        <div *ngIf="signUpForm.controls.email.errors?.['email']">Please enter a valid email</div>
+                    </div>
+                </div> <div class="mb-4">
+                    <label for="information" class="form-label kerfur-label">What information would you like to receive?</label>
+                    <input type="text" id="information" name="information" class="form-control kerfur-input" formControlName="information">
+                    
+                    <div *ngIf="signUpForm.controls.information.errors?.['maxlength']" class="text-danger mt-1">
+                        Possible only 200 characters
+                    </div>
+                </div> <div class="text-center mt-4">
+                    <button type="button" class="btn kerfur-btn-test w-50 mb-3" (click)="updateProfile()">TEST DATA</button>
+                    <button type="submit" class="btn kerfur-btn w-100" [disabled] = "signUpForm.invalid">REGISTER NEW ENTITY</button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
