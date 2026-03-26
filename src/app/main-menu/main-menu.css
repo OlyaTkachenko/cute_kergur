@@ -20,12 +20,25 @@
         0 0 15px #ff66cc,
         0 0 30px #ff00ff;
 }
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 .green-online{
     color:rgb(16, 228, 16);
     text-shadow: 
         0 0 5px #ffffff,
         0 0 15px #8aff66,
         0 0 30px #00ff22;
+}
+
+.red-afk{
+    color:rgb(228, 16, 16);
+    text-shadow: 
+        0 0 5px #ffffff,
+        0 0 15px #ff6666,
+        0 0 30px #ff0000;
 }
 nav{
     background-color: rgb(28, 26, 26);

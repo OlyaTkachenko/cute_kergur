@@ -11,7 +11,11 @@
       </div>
 
       <div class="col-md-4 text-center text-md-end green-online">
-        <span>[ONLINE]</span><br>
+        <button (click)="status.toggle()" [class] = "status.isOnline() ? 'green-online' : 'red-afk'">
+      <span class="navbar-text font-monospace">
+        {{status.isOnline() ? '[ONLINE]' : '[OFFLINE]'}}
+      </span>
+      </button>
       </div>
       
     </div>

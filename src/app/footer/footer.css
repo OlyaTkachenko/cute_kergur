@@ -24,3 +24,23 @@ div>span{
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.green-online{
+    color:rgb(16, 228, 16);
+    text-shadow: 
+        0 0 5px #ffffff,
+        0 0 15px #8aff66,
+        0 0 30px #00ff22;
+}
+
+.red-afk{
+    color:rgb(228, 16, 16);
+    text-shadow: 
+        0 0 5px #ffffff,
+        0 0 15px #ff6666,
+        0 0 30px #ff0000;
+}

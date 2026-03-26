@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Afk } from '../../derectives/afk';
 
 @Component({
   selector: 'app-info',
-  imports: [CommonModule],
+  imports: [CommonModule, Afk],
   templateUrl: './info.html',
   styleUrl: './info.css',
 })

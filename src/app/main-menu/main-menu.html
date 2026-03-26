@@ -2,7 +2,7 @@
   <div class="container-fluid">
     
     <a class="navbar-brand d-flex align-items-center  font-monospace" href="#">
-      <img src="/logo.png" width="40" height="40" alt="Логотип Керфера">
+      <img src="assets/logo.png" width="40" height="40" alt="Логотип Керфера">
       <span class="ms-2 neon-red">KERFUR_OS</span>
     </a>
     
@@ -19,10 +19,11 @@
         </li>
         
       </ul>
-
-      <span class="navbar-text green-online font-monospace">
-        [ONLINE]
+      <button (click)="status.toggle()" [class] = "status.isOnline() ? 'green-online' : 'red-afk'">
+      <span class="navbar-text font-monospace">
+        {{status.isOnline() ? '[ONLINE]' : '[OFFLINE]'}}
       </span>
+      </button>
     </div>
-  </div>
+  </div >
 </nav>
